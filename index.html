@@ -26,9 +26,17 @@
         position: absolute;
         width: auto;
         height: 90vh;
+        object-fit: con;
         transform-origin: center;
         z-index: 1;
         animation: kolysanie 4s ease-in-out infinite;
+    }
+
+    @media (max-width:768px) {
+        .listek,
+        .static-leaf {
+            height: 80vh;
+        }
     }
 
     @keyframes kolysanie {
