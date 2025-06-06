@@ -8,12 +8,29 @@
 
     * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
     body {
         background: #000;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container {
         position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at center, #3b2f4b 0%, #1a0e1a 100%);
+        z-index: 1;
     }
 
     .listek {
@@ -23,37 +40,34 @@
     .listek,
     .static-leaf {
         position: absolute;
-        height: auto;
         width: auto;
-        max-width: 100vw;
-        max-height: 90vh;
+        height: 90vh;
+        object-fit: contain;
         transform-origin: center;
         z-index: 1;
         animation: kolysanie 4s ease-in-out infinite;
     }
 
-    img {
-        object-fit: contain;
-    }
-
-    @media (max-width: 768px) {
+    @media (max-width:768px) {
         .listek,
         .static-leaf {
             max-height: 70vh;
-            top: 33.3vh;
+            width: 100vw;
         }
     }
 
-    @keyframes kolysanie {
-        0% {
-            transform: rotate(-1deg);
-        }
-        50% {
-            transform: rotate(1deg);
-        }
-        100% {
-            transform: rotate(-1deg);
-        }
+    .back {
+        z-index: 1;
+        opacity: 0.6;
+    }
+
+    .middle {
+        z-index: 2;
+        opacity: 0.8;
+    }
+
+    .front {
+        z-index: 3;
     }
     
     .wave1 {
@@ -81,38 +95,21 @@
     animation-delay: 0.3s;
     }
 
-    .back {
-        z-index: 1;
-        opacity: 0.6;
-    }
-
-    .middle {
-        z-index: 2;
-        opacity: 0.8;
-    }
-
-    .front {
-        z-index: 3;
-    }
-
-    .container {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(-50%, -50%);
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: radial-gradient(circle at center, #3b2f4b 0%, #1a0e1a 100%);
-        z-index: 1;
-    }
-
     .centralne-kolysanie {
         animation: kolysanie 4s ease-in-out infinite;
         transform-origin: center center;
+    }
+
+    @keyframes kolysanie {
+        0% {
+            transform: rotate(-1deg);
+        }
+        50% {
+            transform: rotate(1deg);
+        }
+        100% {
+            transform: rotate(-1deg);
+        }
     }
 
   </style>
