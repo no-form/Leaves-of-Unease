@@ -24,7 +24,7 @@
     .container {
         position: relative;
         width: 100vw;
-        height: 100vh;
+        height: 100dvh;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -49,10 +49,17 @@
     }
 
     @media (max-width:768px) {
+        .container {
+            flex-deirection: column;
+            padding: 0 10px;
+            height: 100dvh;
+        }
+      
         .listek,
         .static-leaf {
             max-height: 70vh;
             width: 100vw;
+            position: relative;
         }
     }
 
