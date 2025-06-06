@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaves of Unease</title>
+  <style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+        overflow: hidden;
+    }
+
+    .listek {
+        will-change: transform;
+    }
+
+    .listek,
+    .static-leaf {
+        position: absolute;
+        width: auto;
+        height: 90vh;
+        transform-origin: center;
+        z-index: 1;
+        animation: kolysanie 4s ease-in-out infinite;
+    }
+
+    @keyframes kolysanie {
+        0% {
+            transform: rotate(-1deg);
+        }
+        50% {
+            transform: rotate(1deg);
+        }
+        100% {
+            transform: rotate(-1deg);
+        }
+    }
+    
+    .wave1 {
+    animation: kolysanie 4s ease-in-out infinite;
+    animation-delay: 0s;
+    }
+
+    .wave2 {
+    animation: kolysanie 4.3s ease-in-out infinite;
+    animation-delay: 0.2s;
+    }
+
+    .wave3 {
+    animation: kolysanie 3.8s ease-in-out infinite;
+    animation-delay: 0.4s;
+    }
+
+    .wave4 {
+    animation: kolysanie 4.5s ease-in-out infinite;
+    animation-delay: 0.1s;
+    }
+
+    .wave5 {
+    animation: kolysanie 4.1s ease-in-out infinite;
+    animation-delay: 0.3s;
+    }
+
+    .back {
+        z-index: 1;
+        opacity: 0.6;
+    }
+
+    .middle {
+        z-index: 2;
+        opacity: 0.8;
+    }
+
+    .front {
+        z-index: 3;
+    }
+
+    .container {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at center, #3b2f4b 0%, #1a0e1a 100%);
+        z-index: 1;
+    }
+
+    .centralne-kolysanie {
+        animation: kolysanie 4s ease-in-out infinite;
+        transform-origin: center center;
+    }
+
+  </style>
+
+  </head>
+
+  <body>
+        <div class="container centralne-kolysanie">
+        <img src="listek1.webp" width="683" height="800" class="static-leaf wave1 back">
+        <img src="listek2.webp" width="683" height="800" class="listek wave4 middle">
+        <img src="listek3.webp" width="683" height="800" class="listek wave3 middle">
+        <img src="listek4.webp" width="683" height="800" class="listek wave5 middle">
+        <img src="listek5.webp" width="683" height="800" class="listek wave2 front">
+        <img src="listek6.webp" width="683" height="800" class="listek wave1 middle">
+        <img src="listek7.webp" width="683" height="800" class="listek wave4 middle">
+        <img src="listek8.webp" width="683" height="800" class="listek wave3 front">
+        <img src="listek9.webp" width="683" height="800" class="listek wave2 front">
+        <img src="listek10.webp" width="683" height="800" class="listek wave5 middle">
+        <img src="listek11.webp" width="683" height="800" class="listek wave1 front">
+        <img src="listek12.webp" width="683" height="800" class="listek wave2 middle">
+        <img src="listek13.webp" width="683" height="800" class="listek wave4 middle">
+        <img src="listek14.webp" width="683" height="800" class="listek wave2 middle">
+        <img src="listek15.webp" width="683" height="800" class="listek wave3 middle">
+        <img src="listek16.webp" width="683" height="800" class="listek wave5 middle">
+        <img src="listek17.webp" width="683" height="800" class="listek wave1 middle">
+        <img src="listek18.webp" width="683" height="800" class="listek wave2 front">
+        <img src="listek19.webp" width="683" height="800" class="listek wave4 middle">
+        <img src="listek20.webp" width="683" height="800" class="listek wave5 middle">
+        <img src="listek21.webp" width="683" height="800" class="listek wave1 back">
+        <img src="listek22.webp" width="683" height="800" class="listek wave3 middle">
+        <img src="listek23.webp" width="683" height="800" class="listek wave5 middle" >
+        <img src="listek24.webp" width="683" height="800" class="listek wave2 middle">
+        <img src="listek25.webp" width="683" height="800" class="listek wave4 middle">
+        <img src="listek26.webp" width="683" height="800" class="listek wave1 back">
+        <img src="listek27.webp" width="683" height="800" class="listek wave3 middle">
+        <img src="listek28.webp" width="683" height="800" class="listek wave2 middle">
+        <img src="listek29.webp" width="683" height="800" class="listek wave4 back">
+        <img src="listek30.webp" width="683" height="800" class="listek wave5 middle">
+        <img src="listek31.webp" width="683" height="800" class="listek wave1 middle">
+        <img src="listek32.webp" width="683" height="800" class="listek wave4 middle">
+        <img src="listek33.webp" width="683" height="800" class="listek wave3 front">
+        <img src="listek34.webp" width="683" height="800" class="static-leaf wave2 middle">
+        <img src="listek35.webp" width="683" height="800" class="listek wave5 front">
+        <img src="listek36.webp" width="683" height="800" class="listek wave4 front">
+        <img src="listek37.webp" width="683" height="800" class="static-leaf middle">
+        <img src="listek38.webp" width="683" height="800" class="listek wave3 middle">
+        <img src="listek39.webp" width="683" height="800" class="listek wave1 back">
+        <img src="listek40.webp" width="683" height="800" class="listek wave4 back">
+        <img src="listek41.webp" width="683" height="800" class="listek wave5 middle">
+        <img src="listek42.webp" width="683" height="800" class="static-leaf middle">
+        <img src="listek43.webp" width="683" height="800" class="listek wave2 middle">
+        <img src="listek44.webp" width="683" height="800" class="static-leaf back">
+        <img src="listek45.webp" width="683" height="800" class="listek wave5 middle">
+        <img src="listek46.webp" width="683" height="800" class="static-leaf back">
+        <img src="listek47.webp" width="683" height="800" class="static-leaf wave1 middle">
+        <img src="listek48.webp" width="683" height="800" class="listek wave2 front">
+        <img src="listek49.webp" width="683" height="800" class="listek wave4 front">
+        <img src="listek50.webp" width="683" height="800" class="listek wave5 front">
+        <img src="listek51.webp" width="683" height="800" class="static-leaf wave1 middle">
+        <img src="listek52.webp" width="683" height="800" class="listek wave3 middle">
+        <img src="listek53.webp" width="683" height="800" class="static-leaf wave2 back">
+        <img src="listek54.webp" width="683" height="800" class="listek wave4 back">
+        <img src="listek55.webp" width="683" height="800" class="listek wave5 front">
+        <img src="listek56.webp" width="683" height="800" class="listek wave1 front">
+        <img src="listek57.webp" width="683" height="800" class="listek wave3 middle">
+        <img src="listek58.webp" width="683" height="800" class="listek wave2 middle">
+        <img src="listek59.webp" width="683" height="800" class="listek wave5 front">
+        <img src="listek60.webp" width="683" height="800" class="listek wave3 middle">
+        <img src="listek61.webp" width="683" height="800" class="listek wave1 middle">
+        <img src="listek62.webp" width="683" height="800" class="listek wave2 middle">
+        <img src="listek63.webp" width="683" height="800" class="listek wave4 front">
+        <img src="listek64.webp" width="683" height="800" class="listek wave3 front">
+        <img src="listek65.webp" width="683" height="800" class="listek wave1 front">
+        <img src="listek66.webp" width="683" height="800" class="listek wave5 front">
+        </div>
+
+    </body>
+</html>
