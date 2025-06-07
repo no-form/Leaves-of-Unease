@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leaves of Unease</title>
+
   <style>
 
     * {
@@ -122,7 +123,22 @@
         }
     }
 
+    body:not(.loaded) {
+        visibility:hidden;
+    }
+
   </style>
+
+  <script>
+    window.onload = function () {
+      document.body.classList.add("loaded");
+
+    // Wymuś natychmiastowe ładowanie wszystkich obrazków
+    document.querySelectorAll('img').forEach(img => {
+      img.loading = "eager";
+    });
+  };
+  </script>
 
   </head>
 
