@@ -15,7 +15,7 @@
     body {
         background: #000;
         overflow: hidden;
-        display: flex;
+
         align-items: center;
         justify-content: center;
         height: 100vh;
@@ -41,9 +41,7 @@
     .listek,
     .static-leaf {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(0deg); 
+        top: auto;
         width: auto;
         height: 90vh;
         object-fit: contain;
@@ -54,9 +52,7 @@
 
     @media (max-width:768px) {
         .container {
-            top: 50%;
             left: 0;
-            transform: translate(-50%, -50%);
             height: 100dvh;
             width: 100vw;
             
