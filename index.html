@@ -35,6 +35,12 @@
         z-index: 1;
     }
 
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
     .listek {
         will-change: transform;
     }
@@ -44,7 +50,9 @@
         position: absolute;
         top: auto;
         width: auto;
-        height: 90vh;
+        height: auto;
+        max-width: 100vh;
+        max-height: 90dvh;
         object-fit: contain;
         transform-origin: center;
         z-index: 1;
