@@ -19,6 +19,7 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        width: 100vh; 
     }
 
     .container {
@@ -39,7 +40,7 @@
 
     .listek,
     .static-leaf {
-        position: relative;
+        position: absolute;
         width: auto;
         height: 90vh;
         object-fit: contain;
@@ -50,7 +51,6 @@
 
     @media (max-width:768px) {
         .container {
-            position: absolute;
             top: 50%;
             left: 0;
             transform: translate(-50%, -50%);
